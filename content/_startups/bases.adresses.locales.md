@@ -16,6 +16,12 @@ phases:
   - name: construction
     start: 2020-09-01
     end: 2022-08-31
+fast:
+  promotion: 12
+  montant: 270000
+  impact: 44% population couverte. +100 communes par semaine.
+  ambition: 90-100% en 2024
+
 ---
 ## Pas d'adresse, pas de chocolat
 

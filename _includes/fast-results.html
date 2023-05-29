@@ -1,0 +1,35 @@
+{{ content }}
+
+{%- assign startups = site.startups | fast_promotion: 12, "montant" | reverse -%}
+{%- assign incubators = site.incubators %}
+
+<hr>
+{% for startup in startups %}
+  {%- assign incubator_id = startup.incubator | append: ".md" %}
+  {%- assign incubator = incubators | find: "name", incubator_id %}
+  <h3 class="fr-mb-1w">
+    <a class="fr-link" target="_blank" rel="noopener" href="{{startup.link}}">{{ startup.title }}</a>
+  </h3>
+  <p>
+    <em>
+      {% if incubator.website %}
+        <a target="_blank" rel="noopener" href="{{ incubator.website }}">
+          {{ incubator.title }}
+        </a>
+      {% else %}
+        {{ incubator.title }}
+      {% endif %}
+    </em>
+  </p>
+  <p>{{ startup.mission }}.</p>
+
+  <ul>
+    <li><strong>Montant</strong> : {{ startup.fast.montant | to_euros }}</li>
+    <li><strong>Ambition</strong> : {{ startup.fast.ambition }}</li>
+    {% if startup.fast.impact %}
+      <li><strong>Impact</strong> : {{ startup.fast.impact }}</li>
+    {% endif %}
+  </ul>
+
+  <p class="fr-mb-4w"></p>
+{% endfor %}

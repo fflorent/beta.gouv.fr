@@ -16,6 +16,12 @@ phases:
   - name: success
     start: 2022-06-13
     comment: Spin-off de Datagir
+fast:
+  promotion: 12
+  montant: 230000
+  impact: 850K simulations terminées. 25% de vues sur la page de passage à l’action.
+  ambition: 4 à 5 millions de tests réalisés fin 2023. Développer le suivi du passage à l’action suite au test.
+
 ---
 ## Contexte
 

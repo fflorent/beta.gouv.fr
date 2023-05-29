@@ -103,7 +103,6 @@ mapping:
         required: yes
       "impact":
         type: text
-        required: yes
       "ambition":
         type: text
         required: yes

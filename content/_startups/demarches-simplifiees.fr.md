@@ -22,6 +22,11 @@ redirect_from:
 usertypes:
   - particulier
   - etat
+fast:
+  promotion: 12
+  montant: 30000
+  impact: 6€ économisés par dossier dématérialisé sur Démarches-Simplifiées. >6,2M dossiers déposés.
+  ambition: Accroître l’augmentation du nombre de dossiers grâce aux +1000 démarches à dématérialiser au niveau ministériel ainsi qu’en développant le réflexe DS pour les administrations.
 ---
 
 demarches-simplifiees.fr est une application entièrement en ligne qui permet à tous les organismes assurant des missions de service public de créer des démarches en quelques minutes et de gérer les demandes des usagers sur une plateforme dédiée.
